@@ -1,0 +1,14 @@
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let listItem of specialList">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{ listItem.name }}</h5>
+        <p class="card-text">{{ listItem.description }}</p>
+        <a href="#" class="btn btn-success">Action Btn</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{ listItem.date | date: "shortDate" }}
+      </div>
+    </div>
+  </div>
+</div>
